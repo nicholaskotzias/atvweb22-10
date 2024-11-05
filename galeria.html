@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="lightbox2-2.11.4/dist/css/lightbox.css">
+    <script src="lightbox2-2.11.4/dist/js/lightbox.js"></script>
+    <script src="lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
 </head>
 
 <body>
     <div id="cabecalho">
-       <a href="home.html"><img id="logo" src="img/flor.jpg"></a> 
+        <a href="home.html"><img id="logo" src="img/flor.jpg"></a>
     </div>
 
     <ul id="menu">
@@ -22,15 +25,24 @@
     </ul>
 
     <div id="principal-galeria">
-        <div class="grid-imagem"><img src="img/cafe.jpg"></div>
-        <div class="grid-imagem"><img src="img/cardapio.png"></div>
-        <div class="grid-imagem"><img src="img/comida.jpg"></div>
-        <div class="grid-imagem"><img src="img/comida2.jpg"></div>
-        <div class="grid-imagem"><img src="img/fazendocafe.jpg"></div>
-        <div class="grid-imagem"><img src="img/decoracao.jpg"></div>
-        <div class="grid-imagem"><img src="img/image1.jpg"></div>
-        <div class="grid-imagem"><img src="img/image2.png"></div>
-        <div class="grid-imagem"><img src="img/image3.jpg"></div>
+        <div class="grid-imagem"><a href="img/cafe.jpg" data-lightbox="image-1" data-title="cafeteria"><img
+                    src="img/cafe.jpg"></a></div>
+        <div class="grid-imagem"><a href="img/cardapio.png" data-lightbox="image-1" data-title="cafeteria"><img
+                    src="img/cardapio.png"></a></div>
+        <div class="grid-imagem"><a href="img/comida.jpg" data-lightbox="image-1" data-title="cafeteria"><img
+                    src="img/comida.jpg"></a></div>
+        <div class="grid-imagem"><a href="img/comida2.jpg" data-lightbox="image-1" data-title="cafeteria"><img
+                    src="img/comida2.jpg"></a></div>
+        <div class="grid-imagem"><a href="img/fazendocafe.jpg" data-lightbox="image-1" data-title="cafeteria"><img
+                    src="img/fazendocafe.jpg"></a></div>
+        <div class="grid-imagem"><a href="img/decoracao.jpg" data-lightbox="image-1" data-title="cafeteria"><img
+                    src="img/decoracao.jpg"></a></div>
+        <div class="grid-imagem"><a href="img/image1.jpg" data-lightbox="image-1" data-title="cafeteria"><img
+                    src="img/image1.jpg"></a></div>
+        <div class="grid-imagem"><a href="img/image2.png" data-lightbox="image-1" data-title="cafeteria"><img
+                    src="img/image2.png"></a></div>
+        <div class="grid-imagem"><a href="img/image3.jpg" data-lightbox="image-1" data-title="cafeteria"><img
+                    src="img/image3.jpg"></a></div>
     </div>
 
     <div id="rodape">
@@ -39,6 +51,13 @@
         <p>Telefone: (41) 3300-0134</p>
         <p>Whatsapp: (41) 3300-0134</p>
     </div>
+    <script>
+        lightbox.option({
+            'resizeDuration': 300,
+            'wrapAround': true,
+        })
+    </script>
+
 </body>
 
 </html>
