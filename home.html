@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
@@ -14,6 +15,8 @@
         <img id="logo" src="img/flor.jpg">
     </div>
 
+
+    <span id="burguer" class="material-icons md-18" onclick="clickMenu()">menu</span>
     <ul id="menu">
         <li><a href="home.html"> Home</a></li>
         <li><a href="historia.html">Historia</a></li>
@@ -34,5 +37,15 @@
         <p>E-mail: ifpr@edu.br</p>
     </div>
 </body>
+
+<script>
+    function clickMenu() {
+        if (menu.style.display == 'block') {
+            menu.style.display = 'none'
+        } else {
+            menu.style.display = 'block'
+        }
+    }
+</script>
 
 </html>

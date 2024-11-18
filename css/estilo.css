@@ -1,4 +1,3 @@
-/* Estilos Gerais */
 * {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -8,14 +7,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Logo */
 #logo {
     height: 75px;
     width: 75px;
     border-radius: 30px;
 }
 
-/* Cabeçalho */
 #cabecalho {
     height: 110px;
     width: 100%;
@@ -32,7 +29,19 @@
     transform: scale(1.1);
 }
 
-/* Menu */
+span#burguer{
+    background-color: gray;
+    display: block;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+span#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
 #menu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -59,7 +68,6 @@ a {
     transform: scale(1.2);
 }
 
-/* Seção Cafeteria */
 #cafeteria {
     width: 400px;
     height: 500px;
@@ -72,7 +80,6 @@ a {
     transform: scale(1.2);
 }
 
-/* Seção Principal (Home) */
 #principal-home {
     width: 100%;
     height: 650px;
@@ -83,7 +90,6 @@ a {
     background-image: url("https://img.freepik.com/vetores-premium/tecido-xadrez-padrao-sem-emenda-plano-de-fundo-em-cores-roxas-brancas-e-palidas_109327-443.jpg?w=360");
 }
 
-/* Seção História */
 #principal-historia {
     width: 100%;
     height: 650px;
@@ -92,7 +98,6 @@ a {
     background-image: url("https://img.freepik.com/vetores-premium/tecido-xadrez-padrao-sem-emenda-plano-de-fundo-em-cores-roxas-brancas-e-palidas_109327-443.jpg?w=360");
 }
 
-/* Galeria */
 #principal-galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -108,7 +113,6 @@ a {
     margin-top: 5px;
 }
 
-/* Seção Contato */
 #principal-contato {
     width: 100%;
     display: grid;
@@ -147,7 +151,6 @@ button {
     margin-bottom: 15px;
 }
 
-/* Mapa */
 #mapa {
     display: grid;
     place-items: center;
@@ -157,7 +160,6 @@ button {
     height: 100%;
 }
 
-/* Rodapé */
 #rodape {
     width: 100%;
     height: 190px;
@@ -166,9 +168,7 @@ button {
     background-color: #e0afff;
 }
 
-/* Media Queries para Responsividade */
 
-/* Para telas menores que 768px (tablets) */
 @media (max-width: 768px) {
     #principal-home {
         grid-template-columns: 1fr 1fr;
@@ -201,7 +201,6 @@ button {
     }
 }
 
-/* Para telas menores que 425px (smartphones) */
 @media (max-width: 425px) {
     #menu {
         grid-template-columns: 1fr 1fr;
@@ -223,7 +222,6 @@ button {
 
     #principal-galeria {
         grid-template-columns: 1fr;
-        /* Galeria em uma coluna */
         column-gap: 10px;
     }
 
